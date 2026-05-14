@@ -1,1 +1,1 @@
-# -vulnerable-python-app
+# vulnerable-python-app
