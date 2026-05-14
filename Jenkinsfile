@@ -20,7 +20,7 @@ pipeline {
                 sh '''
                     if [ ! -x "$SNYK_PATH" ]; then
                         echo "Installing Snyk CLI..."
-                        curl -Lo /tmp/snyk https://static.snyk.io/cli/latest/snyk-linux
+                        curl -Lo /tmp/snyk https://downloads.snyk.io/cli/stable/snyk-linux-arm64
                         chmod +x /tmp/snyk
                         mkdir -p /var/jenkins_home/bin
                         mv /tmp/snyk /var/jenkins_home/bin/snyk
